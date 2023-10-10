@@ -32,7 +32,7 @@ import com.bayutb123.experimentdevelopment.ui.theme.ExperimentDevelopmentTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TextFieldInput(
+fun CustomTextField(
     modifier: Modifier = Modifier,
     onTextChanged: (String) -> Unit,
     leadingIcon: @Composable (() -> Unit)? = null,
@@ -78,10 +78,10 @@ fun TextFieldInput(
 @Preview(uiMode = UI_MODE_NIGHT_NO)
 @Preview(uiMode = UI_MODE_NIGHT_YES)
 @Composable
-fun PreviewTextFieldInput() {
+fun PreviewCustomTextField() {
     ExperimentDevelopmentTheme {
         Column {
-            TextFieldInput(
+            CustomTextField(
                 onTextChanged = {},
                 leadingIcon = {
                     Icon(
@@ -96,13 +96,13 @@ fun PreviewTextFieldInput() {
                 placeholder = "Phone number"
             )
             Spacer(modifier = Modifier.height(8.dp))
-            TextFieldInput(
+            CustomTextField(
                 onTextChanged = {},
                 keyboardType = KeyboardType.Email,
                 placeholder = "Email Address"
             )
             Spacer(modifier = Modifier.height(8.dp))
-            TextFieldInput(
+            CustomTextField(
                 onTextChanged = {},
                 trailingIcon = {
                     IconButton(
@@ -119,7 +119,7 @@ fun PreviewTextFieldInput() {
                 placeholder = "Search..."
             )
             Spacer(modifier = Modifier.height(8.dp))
-            TextFieldInput(
+            CustomTextField(
                 modifier = Modifier.height(102.dp),
                 onTextChanged = {},
                 maxLines = 3,
