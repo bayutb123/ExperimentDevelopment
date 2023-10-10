@@ -61,7 +61,8 @@ fun CustomTextField(
             focusedIndicatorColor = Color.Transparent,
             unfocusedIndicatorColor = Color.Transparent,
             containerColor = containerColor,
-            textColor = contentColor,
+            focusedTextColor = contentColor,
+            unfocusedTextColor = contentColor,
             cursorColor = contentColor
         ),
         leadingIcon = leadingIcon,
