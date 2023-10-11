@@ -11,7 +11,6 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -30,7 +29,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.bayutb123.experimentdevelopment.ui.theme.ExperimentDevelopmentTheme
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CustomTextField(
     modifier: Modifier = Modifier,
