@@ -9,17 +9,13 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Phone
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Button
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
+import androidx.compose.material3.ButtonColors
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -29,12 +25,14 @@ import com.bayutb123.experimentdevelopment.ui.theme.ExperimentDevelopmentTheme
 fun FullWidthButton(
     modifier: Modifier = Modifier,
     onClick: () -> Unit,
-    text: String
+    text: String,
+    color: ButtonColors = ButtonDefaults.buttonColors()
 ) {
     Button(
         shape = RoundedCornerShape(MaterialTheme.shapes.medium.topStart),
         onClick = onClick,
-        modifier = modifier.fillMaxWidth()
+        modifier = modifier.fillMaxWidth(),
+        colors = color
     ) {
         Text(text = text, textAlign = TextAlign.Center, modifier = modifier
             .fillMaxWidth()
